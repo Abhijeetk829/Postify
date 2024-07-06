@@ -128,3 +128,9 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+server.js
+llama.js
+ggml-model-q4_0.bin
+ai21.js
+ai.js

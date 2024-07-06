@@ -1,0 +1,77 @@
+{
+    "manifest_version": 3,
+    "name": "Postify",
+    "version": "0.0.1",
+    "description": "Format social media post using genAI text with ease.",
+    "permissions": [
+      "storage"
+    ],
+    "content_scripts": [
+    {
+      "matches": [
+        "*://*.linkedin.com/*",
+        "*://*.facebook.com/*",
+        "*://*.twitter.com/*",
+        "*://*.instagram.com/*",
+        "*://*.tiktok.com/*",
+        "*://*.snapchat.com/*",
+        "*://*.youtube.com/*",
+        "*://*.pinterest.com/*",
+        "*://*.reddit.com/*",
+        "*://*.medium.com/*",
+        "*://*.quora.com/*",
+        "*://*.github.com/*",
+        "*://*.stackexchange.com/*",
+        "*://*.stackoverflow.com/*",
+        "*://*.meetup.com/*",
+        "*://*.wechat.com/*",
+        "*://*.qq.com/*",
+        "*://*.douban.com/*",
+        "*://*.vk.com/*"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_title": "Postify",
+      "default_popup": "popup/popup.html",
+      "default_icon": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+      }
+    },
+    "commands": {
+      "format": {
+        "suggested_key": {
+          "default": "Alt+T",
+          "mac": "Alt+T",
+          "chromeos": "Alt+T",
+          "linux": "Alt+T"
+        },
+        "description": "Format the selected text!"
+      },
+      "rewrite": {
+        "suggested_key": {
+          "windows": "Alt+R",
+          "mac": "Alt+R",
+          "chromeos": "Alt+R",
+          "linux": "Alt+R"
+        },
+        "description": "Rewrite the selected text!"
+      },
+      "beautify": {
+        "suggested_key": {
+          "windows": "Alt+B",
+          "mac": "Alt+B",
+          "chromeos": "Alt+B",
+          "linux": "Alt+B"
+        },
+        "description": "Format and rewrite the selected text!"
+      }
+    }
+  }
+  

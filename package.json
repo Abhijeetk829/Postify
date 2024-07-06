@@ -1,0 +1,34 @@
+{
+  "name": "linkedin-text-formatter",
+  "version": "1.0.0",
+  "description": "server for linkedin-text-formatter",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "node server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abhijeetk829/postify.git"
+  },
+  "author": "Abhijeet Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abhijeetk829/postify/issues"
+  },
+  "homepage": "https://github.com/Abhijeetk829/postify#readme",
+  "dependencies": {
+    "@langchain/community": "^0.2.17",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "llama-node": "^0.1.6",
+    "node-llama-cpp": "^2.8.12",
+    "openai": "^4.52.2",
+    "uuid": "^10.0.0",
+    "webpack": "^5.92.1"
+  },
+  "browser": {
+    "crypto": false
+  }
+}
