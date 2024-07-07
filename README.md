@@ -1,7 +1,10 @@
 # Postify
 
 ### Introduction
-Postify is a Chrome Extension designed to format and rewrite content on professional and social media platforms. It leverages the AI21 Studio genAI engine to execute text formatting and rewrite tasks efficiently.
+Postify is a Chrome Extension designed to format and rewrite content on professional and social media platforms. It leverages the [AI21 Studio](https://studio.ai21.com/login) genAI engine to execute text formatting and rewrite tasks efficiently.
+
+### Release
+To test any early builds, please head over to [releases](https://github.com/Abhijeetk829/Postify/releases)
 
 ### Browser Compatibility
 Postify has been tested and works well on the following browsers:
